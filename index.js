@@ -1,3 +1,14 @@
+
+
+// Mobile Clicking menubar
+const mobile_nav = document.querySelector(".mobile-navbar-btn");
+const header_ele = document.querySelector(".header");
+
+mobile_nav.addEventListener("click",()=>{
+  header_ele.classList.toggle("active")
+});
+
+
 const p_btns = document.querySelector('.p-btns');
 const p_btn = document.querySelectorAll('.p-btn');
 const p_img_ele = document.querySelectorAll('.img-overlay');
@@ -64,14 +75,8 @@ countNum.forEach((curEle) => {
     }
   }
   updateNum();
-})
+});
 
-const mobile_nav = document.querySelector(".mobile-navbar-btn");
-const header_ele = document.querySelector(".header");
-
-mobile_nav.addEventListener("click",()=>{
-  header_ele.classList.toggle("active")
-})
 
 // MEDIA QUERIES IN JAVASCRIPT
 const myJsMedia = (widhtSize)=>{
